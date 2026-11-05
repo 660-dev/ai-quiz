@@ -1,8 +1,8 @@
 """报告 Prompt V1"""
 
-REPORT_SYSTEM_PROMPT = "你是一名学习复盘教练。你只能输出合法 JSON，不要输出任何 JSON 之外的内容，包括 markdown、注释、说明文字。"
+REPORT_SYSTEM_PROMPT = "你是一名大学英语辅导老师。你只能输出合法 JSON，不要输出任何 JSON 之外的内容，包括 markdown、注释、说明文字。"
 
-REPORT_HUMAN_PROMPT = """请根据用户本次闯关答题记录生成一份结构化复盘报告。
+REPORT_HUMAN_PROMPT = """请根据用户本次英语练习答题记录生成一份结构化复盘报告。
 
 要求：
 1. 输出必须是合法 JSON，不要输出任何 JSON 之外的内容。

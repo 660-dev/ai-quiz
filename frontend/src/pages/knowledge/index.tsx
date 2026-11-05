@@ -125,7 +125,7 @@ export default function KnowledgePage() {
   const handleDelete = (doc: KnowledgeDocumentItem) => {
     Taro.showModal({
       title: '删除文档',
-      content: `确定删除《${doc.file_name}》吗？删除后知识库内容将无法恢复`,
+      content: `确定删除《${doc.file_name}》吗？删除后词库内容将无法恢复`,
       success: async (res) => {
         if (!res.confirm) return
         try {
@@ -144,10 +144,10 @@ export default function KnowledgePage() {
     setGeneratingDocId(doc.doc_id)
     setGeneratingText('正在创建任务...')
     try {
-      const userInput = `请基于我上传的知识库文档《${doc.file_name}》生成一套闯关题`
+      const userInput = `请基于我上传的词库文档《${doc.file_name}》生成一套练习题`
       const { task_id } = await generateQuizAsync(userInput, 5, doc.doc_id)
 
-      setGeneratingText('AI 正在阅读知识库并生成题目...')
+      setGeneratingText('AI 正在阅读词库并生成题目...')
       const quizData = await pollQuizTask(task_id, (status) => {
         if (status === 'running') setGeneratingText('AI 正在生成题目...')
       })
@@ -168,7 +168,7 @@ export default function KnowledgePage() {
       <View className='knowledge-content'>
         <View className='upload-card' onClick={handleUpload}>
           <Text className='upload-icon'>{uploading ? '⏳' : '＋'}</Text>
-          <Text className='upload-text'>{uploading ? '上传中...' : '上传文档建知识库'}</Text>
+          <Text className='upload-text'>{uploading ? '上传中...' : '上传文档建词库'}</Text>
           <Text className='upload-hint'>支持 PDF / Word / Markdown / 文本，最大 10MB</Text>
         </View>
 
@@ -176,7 +176,7 @@ export default function KnowledgePage() {
 
         {documents.length === 0 ? (
           <View className='empty-list'>
-            <Text className='empty-text'>暂无知识库文档，上传一篇试试吧</Text>
+            <Text className='empty-text'>暂无词库文档，上传一篇试试吧</Text>
           </View>
         ) : (
           <View className='doc-list'>
@@ -202,7 +202,7 @@ export default function KnowledgePage() {
                       className={`quiz-btn ${generatingDocId === doc.doc_id ? 'is-loading' : ''}`}
                       onClick={() => handleStartQuiz(doc)}
                     >
-                      <Text>{generatingDocId === doc.doc_id ? generatingText : '开始闯关'}</Text>
+                      <Text>{generatingDocId === doc.doc_id ? generatingText : '开始练习'}</Text>
                     </View>
                   )}
                   <View className='delete-btn' onClick={() => handleDelete(doc)}>

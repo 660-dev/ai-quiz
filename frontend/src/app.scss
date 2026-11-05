@@ -1,21 +1,33 @@
-/* 全局样式 - 基于 UI 原型设计系统 */
+/* 全局样式 - 静奢学术风设计系统（墨绿 / 瓷白 / 黄铜） */
 
 /* 设计令牌 */
 page {
-  --bg: #f6f4ef;
-  --panel: rgba(255, 255, 255, 0.92);
-  --text: #1f2d37;
-  --muted: #6c7b87;
-  --orange: #ff7a2f;
-  --orange-deep: #df5f1f;
-  --orange-soft: #fff1e6;
-  --green: #2e9e71;
-  --green-soft: #eff9f3;
-  --red: #ff6f5d;
-  --red-soft: #ffefec;
-  --blue: #4b9dff;
-  --blue-soft: #ebf4ff;
-  --line: #ecdccc;
+  /* 基底 */
+  --bg: #f4f6f4;
+  --bg-primary: #f4f6f4;
+  --panel: rgba(255, 255, 255, 0.94);
+  --surface: #ffffff;
+  --text: #16211e;
+  --muted: #6c7773;
+  --line: #e2e7e3;
+
+  /* 品牌色 */
+  --brand: #1e3a34;
+  --brand-deep: #152b26;
+  --brand-soft: #eaf0ed;
+  --accent: #a87a50;
+  --accent-soft: #f6f0e8;
+
+  /* 语义色（保留原变量名，取值统一到新体系，确保存量样式自动跟随） */
+  --orange: #1e3a34;
+  --orange-deep: #152b26;
+  --orange-soft: #eaf0ed;
+  --green: #2e7d62;
+  --green-soft: #ecf5f1;
+  --red: #b0554c;
+  --red-soft: #faefed;
+  --blue: #4a6c8c;
+  --blue-soft: #edf2f7;
 
   font-family: 'PingFang SC', 'Noto Sans SC', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: var(--text);
@@ -52,12 +64,13 @@ button {
   justify-content: center;
   gap: 12px;
   min-height: 88px;
-  border-radius: 28px;
+  border-radius: 22px;
   color: #fff;
-  background: linear-gradient(180deg, #ff944f, #ff6f27);
-  box-shadow: 0 20px 40px rgba(255, 122, 47, 0.24);
+  background: linear-gradient(135deg, #24473f 0%, #152b26 100%);
+  box-shadow: 0 12px 28px rgba(21, 43, 38, 0.18);
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .btn-secondary {
@@ -65,17 +78,19 @@ button {
   align-items: center;
   justify-content: center;
   min-height: 88px;
-  border-radius: 28px;
-  border: 2px solid #f0dbc9;
-  color: #cb6227;
-  background: #fff7f0;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  color: var(--brand);
+  background: #fff;
   font-size: 28px;
-  font-weight: 800;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .card {
-  border-radius: 28px;
-  border: 2px solid #ede4da;
+  border-radius: 20px;
+  border: 1px solid #e9edea;
   background: #fff;
   padding: 24px;
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 }

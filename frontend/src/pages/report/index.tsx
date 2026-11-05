@@ -122,7 +122,7 @@ export default function ReportPage() {
     <View className='report-page'>
       {/* 顶部栏 */}
       <View className='report-toolbar'>
-        <Text className='toolbar-title'>{quizData?.title || '闯关报告'}</Text>
+        <Text className='toolbar-title'>{quizData?.title || '练习报告'}</Text>
         {xpGain !== null && (
           <View className='xp-badge'>
             <Text className='xp-text'>+{xpGain} XP</Text>
@@ -158,7 +158,7 @@ export default function ReportPage() {
                 <View
                   className='ring-outer-large'
                   style={{
-                    background: `conic-gradient(#ff7a2f 0 ${accuracy}%, #ece7de ${accuracy}% 100%)`,
+                    background: `conic-gradient(#1e3a34 0 ${accuracy}%, #e7ebe8 ${accuracy}% 100%)`,
                   }}
                 >
                   <View className='ring-inner-large'>

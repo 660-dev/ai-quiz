@@ -101,13 +101,13 @@ export default function ProfilePage() {
               {profile?.nickname || '学习者'}
             </Text>
           )}
-          <Text className='slogan'>每天闯关一点点，进步看得见</Text>
+          <Text className='slogan'>每天练习一点点，进步看得见</Text>
         </View>
 
         <View className='stats-row'>
           <View className='stat-item'>
             <Text className='stat-num'>{profile?.quiz_count ?? 0}</Text>
-            <Text className='stat-label'>闯关次数</Text>
+            <Text className='stat-label'>练习次数</Text>
           </View>
           <View className='stat-item'>
             <Text className='stat-num'>{profile?.correct_count ?? 0}</Text>
@@ -133,16 +133,16 @@ export default function ProfilePage() {
         >
           <View className='knowledge-entry-left'>
             <Text className='knowledge-entry-icon'>📚</Text>
-            <Text className='knowledge-entry-text'>我的知识库</Text>
+            <Text className='knowledge-entry-text'>我的词库</Text>
           </View>
           <Text className='knowledge-entry-arrow'>›</Text>
         </View>
 
         {/* 闯关历史 */}
-        <Text className='section-title'>闯关记录</Text>
+        <Text className='section-title'>练习记录</Text>
         {historyItems.length === 0 ? (
           <View className='empty-history'>
-            <Text className='empty-text'>暂无闯关记录，去首页开始学习吧</Text>
+            <Text className='empty-text'>暂无练习记录，去首页开始学习吧</Text>
           </View>
         ) : (
           <View className='history-list'>

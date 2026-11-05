@@ -1,6 +1,6 @@
 .profile-page {
   min-height: 100vh;
-  background: var(--bg-primary, #f6f4ef);
+  background: var(--bg-primary, #f4f6f4);
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -32,14 +32,14 @@
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    border: 2px solid #f1d7c0;
+    border: 1px solid #dbe5df;
   }
 
   .avatar-placeholder {
     width: 128px;
     height: 128px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #ff7a2f, #ffb347);
+    background: linear-gradient(135deg, #24473f, #152b26);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,24 +52,24 @@
 
   .nickname {
     font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
+    font-weight: 600;
+    color: #16211e;
     margin-bottom: 8px;
   }
 
   .nickname-input {
     font-size: 36px;
-    font-weight: 700;
-    color: #1a1a1a;
+    font-weight: 600;
+    color: #16211e;
     margin-bottom: 8px;
     text-align: center;
-    border-bottom: 2px solid #ff7a2f;
+    border-bottom: 1px solid #1e3a34;
     padding: 4px 16px;
   }
 
   .slogan {
     font-size: 26px;
-    color: #999;
+    color: #8a948f;
   }
 }
 
@@ -77,10 +77,10 @@
   display: flex;
   justify-content: space-around;
   background: #fff;
-  border-radius: 24px;
+  border-radius: 20px;
   padding: 32px 16px;
   margin-bottom: 24px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 
   .stat-item {
     display: flex;
@@ -90,14 +90,14 @@
 
   .stat-num {
     font-size: 40px;
-    font-weight: 700;
-    color: #ff7a2f;
+    font-weight: 600;
+    color: #1e3a34;
     margin-bottom: 8px;
   }
 
   .stat-label {
     font-size: 24px;
-    color: #999;
+    color: #8a948f;
   }
 }
 
@@ -106,15 +106,15 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  border-radius: 24px;
+  border-radius: 20px;
   padding: 24px 32px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 
   .xp-label {
     font-size: 28px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #16211e;
   }
 
   .xp-value-badge {
@@ -123,12 +123,12 @@
     gap: 8px;
     padding: 8px 20px;
     border-radius: 999px;
-    background: linear-gradient(90deg, #ff8a45 0%, #ff6f27 100%);
+    background: linear-gradient(135deg, #24473f 0%, #152b26 100%);
   }
 
   .xp-value {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
   }
 
@@ -140,8 +140,8 @@
 .section-title {
   display: block;
   font-size: 30px;
-  font-weight: 700;
-  color: #1a1a1a;
+  font-weight: 600;
+  color: #16211e;
   margin-bottom: 20px;
 }
 
@@ -150,13 +150,13 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  border-radius: 24px;
+  border-radius: 20px;
   padding: 28px 32px;
   margin-bottom: 32px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 
   &:active {
-    background: #faf7f2;
+    background: #f4f7f5;
   }
 
   .knowledge-entry-left {
@@ -172,33 +172,33 @@
   .knowledge-entry-text {
     font-size: 28px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #16211e;
   }
 
   .knowledge-entry-arrow {
     font-size: 36px;
-    color: #ccc;
+    color: #b8c1bc;
   }
 }
 
 .empty-history {
   background: #fff;
-  border-radius: 24px;
+  border-radius: 20px;
   padding: 48px 32px;
   text-align: center;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 
   .empty-text {
     font-size: 26px;
-    color: #999;
+    color: #8a948f;
   }
 }
 
 .history-list {
   background: #fff;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 }
 
 .history-item {
@@ -206,14 +206,14 @@
   align-items: center;
   justify-content: space-between;
   padding: 28px 32px;
-  border-bottom: 1px solid #f0ede6;
+  border-bottom: 1px solid #e9edea;
 
   &:last-child {
     border-bottom: none;
   }
 
   &:active {
-    background: #faf7f2;
+    background: #f4f7f5;
   }
 }
 
@@ -225,7 +225,7 @@
     display: block;
     font-size: 28px;
     font-weight: 600;
-    color: #1a1a1a;
+    color: #16211e;
     margin-bottom: 6px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -234,13 +234,13 @@
 
   .history-meta {
     font-size: 24px;
-    color: #999;
+    color: #8a948f;
   }
 }
 
 .history-arrow {
   font-size: 36px;
-  color: #ccc;
+  color: #b8c1bc;
   margin-left: 16px;
 }
 
@@ -252,7 +252,7 @@
 
   .load-more-text {
     font-size: 26px;
-    color: #ff7a2f;
+    color: #1e3a34;
     font-weight: 600;
   }
 }

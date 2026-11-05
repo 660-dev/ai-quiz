@@ -14,19 +14,19 @@ export default defineAppConfig({
   },
   window: {
     backgroundTextStyle: 'light',
-    navigationBarBackgroundColor: '#fff',
-    navigationBarTitleText: '鱼皮AI闯关学习',
+    navigationBarBackgroundColor: '#ffffff',
+    navigationBarTitleText: 'Jack大学英语',
     navigationBarTextStyle: 'black',
   },
   tabBar: {
-    color: '#9b7d60',
-    selectedColor: '#df5f1f',
-    backgroundColor: '#fffbf8',
+    color: '#8a948f',
+    selectedColor: '#1e3a34',
+    backgroundColor: '#ffffff',
     borderStyle: 'white',
     list: [
       {
         pagePath: 'pages/index/index',
-        text: '闯关',
+        text: '练习',
         iconPath: 'assets/tab-home.png',
         selectedIconPath: 'assets/tab-home-active.png',
       },

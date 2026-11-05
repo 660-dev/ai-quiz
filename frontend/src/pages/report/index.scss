@@ -3,7 +3,7 @@
 .report-page {
   min-height: 100vh;
   padding: 16px 32px 60px;
-  background: linear-gradient(180deg, #fcfaf6 0%, #f5f1ea 100%);
+  background: linear-gradient(180deg, #fafbfa 0%, #f1f4f2 100%);
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -15,15 +15,16 @@
   justify-content: space-between;
   padding: 16px 20px;
   margin-bottom: 20px;
-  border-radius: 36px;
-  border: 2px solid #f0e2d6;
-  background: #fffdfb;
+  border-radius: 24px;
+  border: 1px solid #e6ebe7;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 }
 
 .toolbar-title {
   font-size: 28px;
-  font-weight: 800;
-  color: #7f6347;
+  font-weight: 600;
+  color: #3c4a45;
 }
 
 .xp-badge {
@@ -33,18 +34,20 @@
   padding: 10px 18px;
   border-radius: 999px;
   color: #fff;
-  background: linear-gradient(90deg, #ff8a45 0%, #ff6f27 100%);
+  background: linear-gradient(135deg, #24473f 0%, #152b26 100%);
+  box-shadow: 0 8px 20px rgba(21, 43, 38, 0.16);
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 /* 主标题区 */
 .report-heading {
   display: block;
   font-size: 56px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.02em;
+  color: #16211e;
 }
 
 .report-subtitle {
@@ -67,21 +70,21 @@
   align-items: center;
   gap: 8px;
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 600;
   padding: 10px 18px;
   border-radius: 999px;
 }
 
 .tag-green {
-  color: #2b8c69;
-  background: #ecf8f1;
-  border: 2px solid #b5dfc9;
+  color: #2b7059;
+  background: #ecf5f1;
+  border: 1px solid #b6d8c9;
 }
 
 .tag-red {
-  color: #c0453a;
-  background: #ffefec;
-  border: 2px solid #f5b0a9;
+  color: #a05048;
+  background: #faefed;
+  border: 1px solid #e6c3be;
 }
 
 /* 加载状态 */
@@ -97,18 +100,20 @@
 /* 卡片通用 */
 .note-card,
 .sticker-card {
-  border-radius: 44px;
-  border: 2px solid #f0e2d6;
+  border-radius: 26px;
+  border: 1px solid #e6ebe7;
   background: #fff;
   padding: 26px;
   margin-top: 24px;
+  box-shadow: 0 8px 24px rgba(22, 33, 30, 0.04);
 }
 
 .card-title {
   display: block;
   font-size: 32px;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 16px;
+  color: #16211e;
 }
 
 /* 掌握度卡片 */
@@ -141,8 +146,8 @@
 
 .ring-value {
   font-size: 44px;
-  font-weight: 800;
-  color: #cb6227;
+  font-weight: 700;
+  color: #1e3a34;
 }
 
 .mastery-detail {
@@ -151,7 +156,7 @@
 
 .mastery-desc {
   display: block;
-  color: #637582;
+  color: #5b6862;
   line-height: 1.7;
   font-size: 28px;
 }
@@ -160,13 +165,13 @@
   margin-top: 20px;
   height: 16px;
   border-radius: 999px;
-  background: #ede8e2;
+  background: #e7ebe8;
   overflow: hidden;
 }
 
 .mastery-fill {
   height: 100%;
-  background: linear-gradient(90deg, #ff7a2f, #ff9958);
+  background: linear-gradient(90deg, #1e3a34, #4e7a6c);
   border-radius: 999px;
   transition: width 0.5s ease;
 }
@@ -180,7 +185,7 @@
 
 .weak-item {
   display: block;
-  color: #6d7c88;
+  color: #5b6862;
   font-size: 28px;
   line-height: 1.7;
 }
@@ -194,7 +199,7 @@
 
 .summary-item {
   display: block;
-  color: #6d7c88;
+  color: #5b6862;
   font-size: 28px;
   line-height: 1.7;
 }
@@ -208,16 +213,16 @@
 
 .review-item {
   padding: 20px;
-  border-radius: 28px;
-  border: 2px solid #f0e8de;
-  background: #fffdfb;
+  border-radius: 20px;
+  border: 1px solid #e6ebe7;
+  background: #fff;
 }
 
 .review-stem {
   display: block;
   font-size: 28px;
-  font-weight: 700;
-  color: #33424d;
+  font-weight: 600;
+  color: #3c4a45;
   line-height: 1.6;
 }
 
@@ -226,28 +231,28 @@
   width: 100%;
   height: 280px;
   margin-top: 16px;
-  border-radius: 20px;
+  border-radius: 16px;
 }
 
 .review-result {
   display: inline-block;
   margin-top: 12px;
   font-size: 24px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .review-result.is-correct {
-  color: #29986d;
+  color: #2e7d62;
 }
 
 .review-result.is-wrong {
-  color: #c0453a;
+  color: #b0554c;
 }
 
 .review-explanation {
   display: block;
   margin-top: 8px;
-  color: #6d7c88;
+  color: #5b6862;
   font-size: 24px;
   line-height: 1.6;
 }
@@ -261,17 +266,17 @@
 
 .advice-item {
   display: block;
-  color: #6d7c88;
+  color: #5b6862;
   font-size: 28px;
   line-height: 1.7;
 }
 
 /* 分享海报 */
 .poster-preview {
-  border-radius: 32px;
+  border-radius: 22px;
   padding: 28px;
-  border: 2px dashed #f2cdaf;
-  background: #fff8f2;
+  border: 1px dashed #d3ded7;
+  background: #f7f9f7;
   position: relative;
   min-height: 224px;
 }
@@ -279,7 +284,7 @@
 .poster-quote {
   display: block;
   max-width: 380px;
-  color: #6f583e;
+  color: #3c4a45;
   line-height: 1.65;
   font-size: 28px;
 }
@@ -290,8 +295,8 @@
   bottom: 24px;
   width: 124px;
   height: 124px;
-  border-radius: 24px;
-  border: 2px solid #e9d8ca;
+  border-radius: 18px;
+  border: 1px solid #e2e7e3;
   background: repeating-linear-gradient(45deg, #2a2a34 0 8px, #fff 8px 16px);
 }
 

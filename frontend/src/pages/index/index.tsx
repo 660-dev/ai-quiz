@@ -38,7 +38,7 @@ export default function IndexPage() {
   const handleGenerate = async () => {
     const trimmed = inputValue.trim()
     if (!trimmed) {
-      Taro.showToast({ title: '请输入学习内容', icon: 'none' })
+      Taro.showToast({ title: '请输入练习主题', icon: 'none' })
       return
     }
 
@@ -81,7 +81,7 @@ export default function IndexPage() {
             <Image className='hello-avatar-img' src={user.avatar_url} mode='aspectFill' />
           ) : (
             <View className='hello-avatar'>
-              <Text>{user?.nickname?.[0] || '鱼'}</Text>
+              <Text>{user?.nickname?.[0] || 'J'}</Text>
             </View>
           )}
           <Text className='hello-name'>你好，{user?.nickname || '同学'}</Text>
@@ -93,17 +93,17 @@ export default function IndexPage() {
       </View>
 
       {/* 标题 */}
-      <Text className='page-title'>今天想闯哪一关？</Text>
+      <Text className='page-title'>今天练什么？</Text>
 
       {/* 输入区域 */}
       <View className='quick-input'>
         <View className='input-head'>
-          <View className='input-label'>输入你想学的内容</View>
+          <View className='input-label'>输入你想练的主题</View>
           <View className='mini-mascot'>🐟</View>
         </View>
         <Textarea
           className='input-area'
-          placeholder={'例如：RAG 和传统搜索有什么区别？\n我想搞懂向量数据库是怎么配合工作的。\n最好通过闯关题帮我记住重点。'}
+          placeholder={'例如：大学英语四级高频词汇\n我想练习虚拟语气的用法。\n最好通过选择题帮我巩固语法。'}
           value={inputValue}
           onInput={(e) => setInputValue(e.detail.value)}
           maxlength={500}
@@ -131,7 +131,7 @@ export default function IndexPage() {
             ) : (
               <>
                 <Text className='btn-arrow'>→</Text>
-                <Text>开始生成题目</Text>
+                <Text>开始出题</Text>
               </>
             )}
           </View>
@@ -162,15 +162,15 @@ export default function IndexPage() {
       )}
 
       {/* 学习小贴士 */}
-      <Text className='section-title'>💡 学习小贴士</Text>
+      <Text className='section-title'>💡 学习锦囊</Text>
       <View className='tip-list'>
         <View className='tip-item'>
           <Text className='tip-icon'>🎯</Text>
-          <Text className='tip-text'>每天坚持闯关一次，知识积累看得见</Text>
+          <Text className='tip-text'>每天坚持练习一次，词汇量稳步提升</Text>
         </View>
         <View className='tip-item'>
           <Text className='tip-icon'>📝</Text>
-          <Text className='tip-text'>完成闯关后查看报告，重点复习薄弱知识点</Text>
+          <Text className='tip-text'>完成练习后查看报告，重点复习薄弱语法点</Text>
         </View>
         <View className='tip-item'>
           <Text className='tip-icon'>⭐</Text>
